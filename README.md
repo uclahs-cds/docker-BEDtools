@@ -1,25 +1,21 @@
-# docker-tool_name
-Template Repository for the Boutros Lab Dockerfiles based on the bl-base image.
+# docker-BEDtools
+Dockerfile for BEDtools - a suite of utilities to conduct genomic analysis on BAM, BED< BFF/BTF, and VCF file formats.
 
-The bl-base image is located in the Boutros Lab Docker Hub repo: https://hub.docker.com/repository/docker/blcdsdockerregistry/bl-base
+The image is located in the Boutros Lab Docker Hub repository: https://hub.docker.com/repository/docker/blcdsdockerregistry/bedtools
+
 
 # Documentation
-Docker introduction [here](https://confluence.mednet.ucla.edu/display/BOUTROSLAB/Docker+Introduction)
-
-Dockerfile Best Practices [here](https://confluence.mednet.ucla.edu/display/BOUTROSLAB/Dockerfile+Best+Practices)
-
-Docker image versioning standard [here](https://confluence.mednet.ucla.edu/display/BOUTROSLAB/Docker+image+versioning+standardization)
-
+BEDtools github [here](https://github.com/arq5x/bedtools2)
+BEDtools manual [here](https://bedtools.readthedocs.io/en/latest/)
 
 # Version
 | Tool | Version |
 |------|---------|
-|tool_name| X.X.X|
-|tool_name_2|X.X.X|
+| BEDtools | 2.29.2 |
 
 
 ---
 
 ## References
 
-1. Tool specific references can be listed here
+1. Aaron R. Quinlan, Ira M. Hall, BEDTools: a flexible suite of utilities for comparing genomic features, Bioinformatics, Volume 26, Issue 6, 15 March 2010, Pages 841–842, https://doi.org/10.1093/bioinformatics/btq033
