@@ -1,4 +1,4 @@
-ARG MINIFORGE_VERSION=22.9.0-2
+ARG MINIFORGE_VERSION=23.1.0-1
 FROM condaforge/mambaforge:${MINIFORGE_VERSION} AS builder
 
 # Use mamba to install tools and dependencies into /usr/local
@@ -19,5 +19,5 @@ RUN groupadd -g 500001 bldocker && \
 # Change the default user to bldocker from root
 USER bldocker
 
-LABEL maintainer="Helena Winata <hwinata@mednet.ucla.edu>" \
+LABEL maintainer="Sorel Fitz-Gibbon <sfitzgibbon@mednet.ucla.edu>" \
 org.opencontainers.image.source=https://github.com/uclahs-cds/docker-BEDtools
