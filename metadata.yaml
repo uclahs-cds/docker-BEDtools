@@ -1,10 +1,10 @@
 ---
 Category: 'docker'
-Description: 'Template Docker repository for tool_name'  # Description of why the repository exists
-Maintainers: ['YourName@mednet.ucla.edu']  # email address of maintainers
-Contributors: ['Your Name']  # Full names of contributors
+Description: 'Docker repository for BEDtools'  # Description of why the repository exists
+Maintainers: ['hwinata@mednet.ucla.edu']  # email address of maintainers
+Contributors: ['Helena Winata']  # Full names of contributors
 Languages: ['Dockerfile']  # programming languages used
-Tools: ['tool_name']  # Name of the tool(s) used in the Dockerfile
-Version: ['X.X.X']  # Tool version number
-Purpose of tool: ''  # Description of what this tool does
-References: ''  # is the tool/dependencies published, is there a confluence page
+Tools: ['BEDtools']  # Name of the tool(s) used in the Dockerfile
+Version: ['2.29.2']  # Tool version number
+Purpose of tool: 'Tools for genomic analysis on BAM, BED, GFF/GTF, and VCF file formats'  # Description of what this tool does
+References: 'Quinlan et al. Bioinformatics 26, (2010)'  # is the tool/dependencies published, is there a confluence page
