@@ -1,8 +1,9 @@
-FROM blcdsdockerregistry/bl-base:1.0.0 AS builder
+ARG MINIFORGE_VERSION=22.9.0-2
+FROM condaforge/mambaforge:${MINIFORGE_VERSION} AS builder
 
-# Use conda to install tools and dependencies into /usr/local
-ARG BEDTOOLS_VERSION=2.29.2
-RUN conda create -qy -p /usr/local \
+# Use mamba to install tools and dependencies into /usr/local
+ARG BEDTOOLS_VERSION=2.31.0
+RUN mamba create -qy -p /usr/local \
     -c bioconda \
     -c conda-forge \
     bedtools==${BEDTOOLS_VERSION}
@@ -11,5 +12,12 @@ RUN conda create -qy -p /usr/local \
 FROM ubuntu:20.04
 COPY --from=builder /usr/local /usr/local
 
-LABEL maintainer="Helena Winata <hwinata@mednet.ucla.edu>"
+# Add a new user/group called bldocker
+RUN groupadd -g 500001 bldocker && \
+    useradd -r -u 500001 -g bldocker bldocker
 
+# Change the default user to bldocker from root
+USER bldocker
+
+LABEL maintainer="Helena Winata <hwinata@mednet.ucla.edu>" \
+org.opencontainers.image.source=https://github.com/uclahs-cds/docker-BEDtools
