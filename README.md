@@ -1,9 +1,6 @@
 # docker-BEDtools
 Dockerfile for BEDtools - a suite of utilities to conduct genomic analysis on BAM, BED< BFF/BTF, and VCF file formats.
 
-The image is located in the Boutros Lab Docker Hub repository: https://hub.docker.com/repository/docker/blcdsdockerregistry/bedtools
-
-
 # Documentation
 BEDtools github [here](https://github.com/arq5x/bedtools2)
 BEDtools manual [here](https://bedtools.readthedocs.io/en/latest/)
@@ -11,7 +8,7 @@ BEDtools manual [here](https://bedtools.readthedocs.io/en/latest/)
 # Version
 | Tool | Version |
 |------|---------|
-| BEDtools | 2.29.2 |
+| BEDtools | 2.31.0 |
 
 
 ---
