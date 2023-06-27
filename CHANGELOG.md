@@ -11,7 +11,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ---
 
-## [2.31.0] - 2023-06-23
+## [2.31.0] - 2023-06-27
 ### Changed
 - Update to BEDtools v2.31.0
 
