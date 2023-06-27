@@ -8,3 +8,4 @@ Tools: ['BEDtools']  # Name of the tool(s) used in the Dockerfile
 Version: ['2.31.0']  # Tool version number
 Purpose of tool: 'Tools for genomic analysis on BAM, BED, GFF/GTF, and VCF file formats'  # Description of what this tool does
 References: 'Quinlan et al. Bioinformatics 26, (2010)'  # is the tool/dependencies published, is there a confluence page
+image_name: 'bedtools'
